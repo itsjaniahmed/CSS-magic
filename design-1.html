@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design-1</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #f7a985;
+            --secondary-color: rgb(63, 63, 63);
+            --tertiary-color: #3f2b21;
+            --white-color: #ffffff;
+        }
+
+        * {
+            padding: 0%;
+            margin: 0%;
+
+        }
+
+
+
+        body {
+            background-color: var(--primary-color);
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        .btn {
+            padding: 10px 40px;
+            font-weight: bold;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin: 20px 0px;
+        }
+
+        .pri-btn {
+            padding: 15px 40px;
+            background-color: var(--tertiary-color);
+            color: var(--white-color);
+        }
+
+
+        .menu {
+
+            display: flex;
+            justify-content: space-between;
+            width: 1100px;
+            max-width: 80%;
+            margin: auto;
+            align-items: center;
+            padding: 30px 0px;
+        }
+
+        .main {
+            width: 1100px;
+            max-width: 80%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .right-text {
+            width: 45%;
+            font-size: 2rem;
+
+        }
+
+        h1,
+        h2,
+        h3 {
+
+            color: black;
+        }
+
+        p {
+            color: var(--secondary-color);
+        }
+
+        .right-text p {
+            font-size: 20px;
+
+        }
+
+        @media only screen and (max-width:780px) {
+            .menu {
+                max-width: 90%;
+            }
+
+            .main {
+                max-width: 90%;
+                flex-direction: column;
+            }
+
+            .right-text {
+                margin: 50px 0px;
+                padding: 0px 0px;
+                width: 100%;
+                font-size: 1.5rem;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="menu">
+        <h1>Lorem </h1>
+
+        <button class="btn pri-btn">Contact</button>
+    </div>
+
+    <div class="main">
+
+        <div class="right-text">
+            <h1>We are Awesome!</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit facere.</p>
+            <button class="btn pri-btn">Start Trail</button>
+        </div>
+        <div class="main-img">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80"
+                alt="" srcset="">
+
+        </div>
+    </div>
+</body>
+
+</html>
