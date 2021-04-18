@@ -10,10 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #f7a985;
-            --secondary-color: rgb(63, 63, 63);
-            --tertiary-color: #3f2b21;
-            --white-color: #ffffff;
+            --primary-color: #ffd09a;
+            --secondary-color: rgb(53, 53, 53);
+            --tertiary-color: #d8ab78;
+            --white-color: #f7f7f7;
+            --heading-color: #000000;
         }
 
         * {
@@ -26,14 +27,14 @@
 
         body {
             background-color: var(--primary-color);
-       
+
         }
 
         h1,
         h2,
         h3 {
 
-            color: black;
+            color: var(--heading-color);
         }
 
         p {
@@ -56,6 +57,12 @@
         }
 
 
+        .sec-btn {
+            padding: 15px 40px;
+            background-color: var(--heading-color);
+            color: var(--white-color);
+        }
+
         .menu {
 
             display: flex;
@@ -67,6 +74,26 @@
             padding: 30px 0px;
         }
 
+
+        .main-menu {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            gap: 20px;
+            text-decoration: none;
+        }
+
+        .main-menu li a{
+           color: var(--heading-color);
+
+        }
+        .main-menu li a:hover{
+            text-decoration: line-through;
+
+        }
+
+
+
         .main {
             width: 1100px;
             max-width: 80%;
@@ -76,6 +103,8 @@
             justify-content: space-between;
 
         }
+
+
 
         .right-text {
             width: 45%;
@@ -114,13 +143,17 @@
                 max-width: 90%;
                 flex-direction: column;
             }
-
+     
             .right-text {
-                margin: 50px 0px;
+                margin: 60px 0px;
                 padding: 0px 0px;
-                width: 100%;
+                width: 90%;
                 font-size: 1.5rem;
 
+            }
+
+            .main-img img {
+                width: 80%;
             }
         }
     </style>
@@ -130,9 +163,16 @@
 
 
     <div class="menu">
-        <h1>Lorem </h1>
 
-        <button class="btn pri-btn">Contact</button>
+        <ul class="main-menu">
+            <h1 class="Logo">Lorem </h1>
+         
+            <li><a href="">Our Work</a> </li>
+     
+            <li><a href="">Contact</a> </li>
+        
+        </ul>
+        <button class="btn sec-btn">Contact</button>
     </div>
 
     <div class="main">
@@ -140,7 +180,9 @@
         <div class="right-text">
             <h1>We are Awesome!</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit facere.</p>
+            <button class="btn sec-btn">Check Now</button>
             <button class="btn pri-btn">Start Trail</button>
+
         </div>
         <div class="main-img">
             <img src="https://images.pexels.com/photos/3370021/pexels-photo-3370021.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
@@ -150,7 +192,7 @@
     </div>
 
 
-</script>
+    </script>
 </body>
 
 </html>
